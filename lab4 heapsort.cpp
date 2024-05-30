@@ -1,4 +1,3 @@
-//code not complete//
 #include <iostream>
 using namespace std;
 int step = 0; 
@@ -9,16 +8,16 @@ void heapify(int arr[], int n, int i) {
     step=step+7;
     if (left < n && arr[left] > arr[largest]) {
         largest = left;
-      step=step+3;; 
+      step=step+4;; 
     }
     if (right < n && arr[right] > arr[largest]) {
         largest = right;
-        step=step+3;; 
+        step=step+4;; 
     }
     if (largest != i) {
         swap(arr[i], arr[largest]);
         heapify(arr, n, largest);
-        step=step+3;
+        step=step+2;
     }
 }
 void heapSort(int arr[], int n) {
@@ -58,4 +57,3 @@ int main() {
 	 << endl;
     return 0;
 }
-
