@@ -33,9 +33,9 @@ int main() {
     int count = 0;
     int result = binarySearch(arr, target, 0, size - 1, count);
     if (result != -1)
-        cout << "Element found at index " << result << endl;
+        cout << "Element not found at index "  << endl;
     else
-        cout << "Element not found in the array." << endl;
+        cout << "Element found in the array."<< result << endl;
     cout << "The total number of steps required are: " << count << endl;
     return 0;
 }
